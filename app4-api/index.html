@@ -5,10 +5,20 @@
 		<title></title>
 	</head>
 	<body ng-controller="starControl">
+{{api}}
+<ul>
+	<li ng-repeat="(key, prop) in api">{{key}} : {{prop}}</li>
+</ul>
 
-		<div ng-repeat="person in people" class="">
-			{{person.name}}
-		</div>
+		<!-- <div ng-repeat="person in people" class="">
+			<h2>{{person.name}}</h2>
+			<p>Height: {{person.height}} | Mass: {{person.mass}} | Hair: {{person.hair_color}} | Skin: {{person.skin_color}} | Eyes: {{person.eye_color}}</p>
+			<h3>Films:</h3>
+				<ol>
+				<li ng-repeat="(key, value) in people">{{people}}</li>
+				</ol>
+				<a href="{{person.url}}">Link</a>
+		</div> -->
 
 
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>

@@ -1,11 +1,15 @@
 angular.module("apiApp").controller("starControl", function($scope, starWars) {
 
-  $scope.getPeople = function() {
-    starWars.getPeople().then(function(starWarsData) {
-      $scope.people = starWarsData;
+  $scope.getData = function() {
+    starWars.getData().then(function(starWarsData) {
+      $scope.api = starWarsData;
     });
   };
 
-  $scope.getPeople();
+  $scope.getData();
+
+// $scope.getFilms = function() {
+//
+// }
 
 });
