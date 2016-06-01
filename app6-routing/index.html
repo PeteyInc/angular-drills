@@ -7,11 +7,19 @@
 </head>
 
 <body>
-	<h1>app6 - routing</h1>
+	<ul style="list-style: none; display: inline;">
+		<li><a ui-sref="home">Home</a></li>
+		<li><a href="#signup">Signup</a></li>
+		<li><a href="details">Details</a></li>
+	</ul>
+	<ui-view></ui-view>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.js"></script>
 	<script src="app.js"></script>
 	<script src="controller.js"></script>
+	<script src="detailsCtrl.js"></script>
+	<script src="signupCtrl.js"></script>
 	<script src="service.js"></script>
 </body>
 
